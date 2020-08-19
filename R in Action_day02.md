@@ -29,7 +29,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-##管理R工作空间的函数
+## 管理R工作空间的函数
 ```{r}
 getwd() ##显示当前的工作目录
 setwd("mydir") ##修改当前的工作目录为mydir
@@ -44,7 +44,7 @@ q() ##退出R
 ```
 
 
-##管理R工作空间的命令
+## 管理R工作空间的命令
 ```{r}
 setwd(getwd())
 options()
@@ -56,7 +56,7 @@ q()
 ```
 
 
-##输入和输出
+## 输入和输出
 ```{r}
 ## 输入
 source("...R") ##在当前会话中执行一个脚本
@@ -74,7 +74,7 @@ pdf('filename.pdf') ##pdf文件输出
 
 
 
-##数据结构
+## 数据结构
 ```{r, comment=""}
 ##向量
 a <- c('one', 1, 'two')
@@ -100,7 +100,7 @@ detach(mtcars) ##将mtcars数据框从搜索路径中移除
 ```
 
 
-##从外部导入数据
+## 从外部导入数据
 ```{r}
 
 ##把带分隔符的文件导入数据
@@ -118,7 +118,7 @@ mydatafile <- read.table(file, options)
 ```
 
 
-##图形参数
+## 图形参数
 ```{r}
 
 ##指定图形的特征：字体，颜色，坐标轴，标签
@@ -165,7 +165,7 @@ title("An example of creative axes", xlab = 'x values', ylab = 'y=x')
 par(opar)
 ```
 
-##参考线
+## 参考线
 ```{r}
 abline(h=yvalues, v=xvalues)
 
@@ -174,7 +174,7 @@ abline(v=seq(1,10,2), lty=2, col='blue')
 ```
 
 
-##图例
+## 图例
 ```{r}
 legend(location, title, legend, ...)
 
@@ -183,21 +183,21 @@ legend(location, title, legend, ...)
 ##legend图例标签组成的字符型向量
 ```
 
-##文本标注
+## 文本标注
 ```{r}
 text(location, "text to place", pos )
 ##location 文本的位置参数，可以为一对x,y坐标
 ##pos 文本相对于位置参数的方位，1=下，2=左，3=上，4=右
 ```
 
-##图形的组合
+## 图形的组合
 ```{r}
 ##可以使用函数par()或者layout()组合多幅图形为一幅总括图形
 ## mfrow=c(nrows, ncols) 来创建按行填充的行数为nrows、列数为ncols的图形矩阵
 ## mfcol=c(nrows, ncols) 按列填充矩阵
 ```
 
-##多幅图形布局的精细控制排布或者叠加若干图形来创建单幅的图形，使用fig()函数来实现
+## 多幅图形布局的精细控制排布或者叠加若干图形来创建单幅的图形，使用fig()函数来实现
 ```{r}
 opar <- par(no.readonly = T)
 
