@@ -127,7 +127,7 @@ cat("a", "\b.\n", "b", file = "myfile")
 apply(x, MARGIN, FUN) ##x为数据对象， MARGIN是维度的下标，Fun是由你指定的函数
 ## margin=1表示行
 ## margin=2表示列
-
+```
 
 
 
